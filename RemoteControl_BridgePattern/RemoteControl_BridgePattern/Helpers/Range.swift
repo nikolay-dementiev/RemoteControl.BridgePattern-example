@@ -9,7 +9,9 @@
 import UIKit
 
 func randRange (lower: Int , upper: Int) -> Int {
+    
     return lower + Int(arc4random_uniform(UInt32(upper - lower + 1)))
+    
 }
 
 func getRandomColor() -> UIColor{

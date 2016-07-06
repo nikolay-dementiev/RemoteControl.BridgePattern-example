@@ -20,6 +20,7 @@ class TVController: UIViewController {
     @IBAction func changeCannelButtonClicked(sender: AnyObject) {
         
         startToUseRM ()
+        
     }
     
     override func viewDidLoad() {

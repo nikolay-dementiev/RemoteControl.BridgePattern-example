@@ -14,12 +14,12 @@
 		E798C3A81D2D1A63004CD5C6 /* TVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E798C3A71D2D1A63004CD5C6 /* TVController.swift */; };
 		E798C3AA1D2D1ACB004CD5C6 /* TVInterfaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E798C3A91D2D1ACB004CD5C6 /* TVInterfaceView.swift */; };
 		E798C3AC1D2D2894004CD5C6 /* Bridge_GenericImplementation.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E798C3AB1D2D2894004CD5C6 /* Bridge_GenericImplementation.rtf */; };
-		E798C3B61D2D2A1F004CD5C6 /* ITV.swift in Sources */ = {isa = PBXBuildFile; fileRef = E798C3B51D2D2A1F004CD5C6 /* ITV.swift */; };
 		E798C3B81D2D2CFE004CD5C6 /* TypeOfViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E798C3B71D2D2CFE004CD5C6 /* TypeOfViewer.swift */; };
 		E798C3BA1D2D3248004CD5C6 /* TVInterfaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E798C3B91D2D3248004CD5C6 /* TVInterfaceViewController.swift */; };
 		E798C3BE1D2D3741004CD5C6 /* AbstractRemoteCotroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E798C3BC1D2D3741004CD5C6 /* AbstractRemoteCotroller.swift */; };
 		E798C3BF1D2D3741004CD5C6 /* LogitechRemoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E798C3BD1D2D3741004CD5C6 /* LogitechRemoteController.swift */; };
 		E798C3C11D2D3A07004CD5C6 /* Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = E798C3C01D2D3A07004CD5C6 /* Range.swift */; };
+		E798C3C31D2D45E5004CD5C6 /* ITV.swift in Sources */ = {isa = PBXBuildFile; fileRef = E798C3C21D2D45E5004CD5C6 /* ITV.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,12 +32,12 @@
 		E798C3A71D2D1A63004CD5C6 /* TVController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVController.swift; sourceTree = "<group>"; };
 		E798C3A91D2D1ACB004CD5C6 /* TVInterfaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVInterfaceView.swift; sourceTree = "<group>"; };
 		E798C3AB1D2D2894004CD5C6 /* Bridge_GenericImplementation.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Bridge_GenericImplementation.rtf; sourceTree = "<group>"; };
-		E798C3B51D2D2A1F004CD5C6 /* ITV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITV.swift; sourceTree = "<group>"; };
 		E798C3B71D2D2CFE004CD5C6 /* TypeOfViewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeOfViewer.swift; sourceTree = "<group>"; };
 		E798C3B91D2D3248004CD5C6 /* TVInterfaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVInterfaceViewController.swift; sourceTree = "<group>"; };
 		E798C3BC1D2D3741004CD5C6 /* AbstractRemoteCotroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractRemoteCotroller.swift; sourceTree = "<group>"; };
 		E798C3BD1D2D3741004CD5C6 /* LogitechRemoteController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogitechRemoteController.swift; sourceTree = "<group>"; };
 		E798C3C01D2D3A07004CD5C6 /* Range.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Range.swift; sourceTree = "<group>"; };
+		E798C3C21D2D45E5004CD5C6 /* ITV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITV.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +83,7 @@
 		E798C3A21D2D156F004CD5C6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E798C3C21D2D45E5004CD5C6 /* ITV.swift */,
 				E798C3BB1D2D3741004CD5C6 /* RemoteCotroller */,
 				E798C3A71D2D1A63004CD5C6 /* TVController.swift */,
 				E798C3B91D2D3248004CD5C6 /* TVInterfaceViewController.swift */,
@@ -103,7 +104,6 @@
 		E798C3A41D2D156F004CD5C6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E798C3B51D2D2A1F004CD5C6 /* ITV.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -212,10 +212,10 @@
 				E798C3BA1D2D3248004CD5C6 /* TVInterfaceViewController.swift in Sources */,
 				E798C3B81D2D2CFE004CD5C6 /* TypeOfViewer.swift in Sources */,
 				E798C3C11D2D3A07004CD5C6 /* Range.swift in Sources */,
+				E798C3C31D2D45E5004CD5C6 /* ITV.swift in Sources */,
 				E798C3911D2D14DA004CD5C6 /* AppDelegate.swift in Sources */,
 				E798C3A81D2D1A63004CD5C6 /* TVController.swift in Sources */,
 				E798C3AA1D2D1ACB004CD5C6 /* TVInterfaceView.swift in Sources */,
-				E798C3B61D2D2A1F004CD5C6 /* ITV.swift in Sources */,
 				E798C3BE1D2D3741004CD5C6 /* AbstractRemoteCotroller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,6 +370,7 @@
 				E798C3A11D2D14DA004CD5C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
