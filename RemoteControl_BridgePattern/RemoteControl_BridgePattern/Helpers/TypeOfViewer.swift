@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import UIKit
 
 enum TypeOfViewer: String, CustomStringConvertible {
     case SamsungTv, SonyTv

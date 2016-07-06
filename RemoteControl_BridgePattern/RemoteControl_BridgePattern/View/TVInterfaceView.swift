@@ -8,11 +8,18 @@
 
 import UIKit
 
+protocol TVInterfaceViewControll {
+    func switchCannel(channel: Int, tvType: TypeOfViewer?)
+    func on(tvType: TypeOfViewer?)
+    func off(tvType: TypeOfViewer?)
+}
+
 @IBDesignable
 class TVInterfaceView: UIView, ITV{
     
     var typeOfTv: TypeOfViewer?
-    
+    var interfaceControllerDelegat:TVInterfaceViewControll?
+
     @IBInspectable var currentBackgroundColor:UIColor = UIColor.clearColor() {
         didSet{
             backgroundColor = currentBackgroundColor
@@ -40,22 +47,20 @@ class TVInterfaceView: UIView, ITV{
     }
     
     func currentViewSetup () {
-        //nothing yet...
+        interfaceControllerDelegat = TVInterfaceViewController()
     }
     
-    //MARK:ITV Protocol
+    //MARK:ITV Protocol = redirecting
+    //here it is necessary to transfer control function in the controller, according to MVC's model
     func on() {
-        print ("\(typeOfTv) is turned on.")
+        interfaceControllerDelegat?.on(typeOfTv)
     }
     
     func off() {
-        print ("\(typeOfTv) is turned off.")
+        interfaceControllerDelegat?.off(typeOfTv)
     }
     
     func switchCannel(channel: Int) {
-        
-        if let typeOfTvTemp = typeOfTv {
-            print ("\(typeOfTvTemp.description): cannel - \(channel).")
-        }
+        interfaceControllerDelegat?.switchCannel(channel, tvType: typeOfTv)
     }
 }

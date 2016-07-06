@@ -20,11 +20,11 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EJn-Ry-OYi" customClass="TVInterfaceView" customModule="RemoteControl_BridgePattern" customModuleProvider="target">
                                 <rect key="frame" x="180" y="41" width="240" height="128"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tv1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXK-k2-w3p">
-                                        <rect key="frame" x="203" y="8" width="29" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tv1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXK-k2-w3p">
+                                        <rect key="frame" x="100" y="8" width="123" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="bmS-nh-1d8"/>
-                                            <constraint firstAttribute="width" constant="29" id="myV-ZA-vMr"/>
+                                            <constraint firstAttribute="width" constant="123" id="myV-ZA-vMr"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -45,7 +45,7 @@
                                 <constraints>
                                     <constraint firstItem="DCY-1t-fsq" firstAttribute="leading" secondItem="EJn-Ry-OYi" secondAttribute="leading" constant="8" id="1EJ-tk-wZ9"/>
                                     <constraint firstAttribute="width" constant="240" id="Bi5-4v-gRE"/>
-                                    <constraint firstAttribute="trailing" secondItem="wXK-k2-w3p" secondAttribute="trailing" constant="8" id="UjU-7J-k7o"/>
+                                    <constraint firstAttribute="trailing" secondItem="wXK-k2-w3p" secondAttribute="trailing" constant="17" id="UjU-7J-k7o"/>
                                     <constraint firstAttribute="height" constant="128" id="dVo-Nu-KYe"/>
                                     <constraint firstAttribute="bottom" secondItem="DCY-1t-fsq" secondAttribute="bottom" constant="8" id="eYo-6G-Vy7"/>
                                     <constraint firstItem="wXK-k2-w3p" firstAttribute="top" secondItem="EJn-Ry-OYi" secondAttribute="top" constant="8" id="i0d-t0-Czg"/>
@@ -54,15 +54,18 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="currentBackgroundColor">
                                         <color key="value" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rnw-hw-5Zf" customClass="TVInterfaceView" customModule="RemoteControl_BridgePattern" customModuleProvider="target">
                                 <rect key="frame" x="180" y="219" width="240" height="128"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tv2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iny-Da-y4P">
-                                        <rect key="frame" x="203" y="8" width="29" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tv2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iny-Da-y4P">
+                                        <rect key="frame" x="109" y="8" width="123" height="21"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="29" id="Cjc-9J-dJ4"/>
+                                            <constraint firstAttribute="width" constant="123" id="Cjc-9J-dJ4"/>
                                             <constraint firstAttribute="height" constant="21" id="eYu-aF-Pvi"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -93,16 +96,26 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="currentBackgroundColor">
                                         <color key="value" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOu-xa-9AX">
-                                <rect key="frame" x="234" y="550" width="132" height="30"/>
+                                <rect key="frame" x="200" y="536" width="201" height="44"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="132" id="RVk-ga-aic"/>
+                                    <constraint firstAttribute="width" constant="201" id="RVk-ga-aic"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="change channel">
                                     <color key="titleShadowColor" red="0.53725490200000003" green="0.76862745099999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="changeCannelButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3rT-tH-QXt"/>
                                 </connections>
@@ -120,11 +133,11 @@
                     </view>
                     <connections>
                         <outlet property="tv1" destination="EJn-Ry-OYi" id="ej9-41-57T"/>
-                        <outlet property="tv1CannelLabel" destination="DCY-1t-fsq" id="cR9-Y6-FXd"/>
-                        <outlet property="tv1Label" destination="wXK-k2-w3p" id="9S3-PN-CYx"/>
+                        <outlet property="tv1CannelLabel" destination="DCY-1t-fsq" id="DPD-1f-fNr"/>
+                        <outlet property="tv1Label" destination="wXK-k2-w3p" id="9Sj-x6-UK4"/>
                         <outlet property="tv2" destination="rnw-hw-5Zf" id="iif-WI-vEp"/>
-                        <outlet property="tv2CannelLabel" destination="JHo-6t-x6S" id="3ne-tc-I1W"/>
-                        <outlet property="tv2Label" destination="iny-Da-y4P" id="99h-zF-Gzd"/>
+                        <outlet property="tv2CannelLabel" destination="JHo-6t-x6S" id="IMA-2i-YXW"/>
+                        <outlet property="tv2Label" destination="iny-Da-y4P" id="hNu-o3-dHE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

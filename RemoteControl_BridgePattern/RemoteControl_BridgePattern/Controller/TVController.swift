@@ -23,15 +23,27 @@ class TVController: UIViewController {
     }
     
     override func viewDidLoad() {
-        tv1.typeOfTv = TypeOfViewer.SamsungTv
-        tv2.typeOfTv = TypeOfViewer.SonyTv
+        let typeOfTv1 = TypeOfViewer.SamsungTv
+        tv1.typeOfTv = typeOfTv1
+        tv1Label.text = "tv1 \(typeOfTv1.description)"
+        
+        let typeOfTv2 = TypeOfViewer.SonyTv
+        tv2.typeOfTv = typeOfTv2
+        tv2Label.text = "tv2 \(typeOfTv2.description)"
     }
     
-    //use
+    //call:
     func startToUseRM () {
+        var randomCannel: Int = 0
+        randomCannel = randRange(0, upper: 80)
+        setCannelOnTv (tv1, cannel: randomCannel)
+        tv1CannelLabel.text = "cannel: " + String(randomCannel)
+        tv1.backgroundColor = getRandomColor()
         
-        setCannelOnTv (tv1, cannel: 45)
-        setCannelOnTv (tv2, cannel: 23)
+        randomCannel = randRange(20, upper: 100)
+        setCannelOnTv (tv2, cannel: randomCannel)
+        tv2CannelLabel.text = "cannel: " + String(randomCannel)
+        tv2.backgroundColor = getRandomColor()
     }
     
     func setCannelOnTv (tv: ITV, cannel: Int) {
@@ -40,77 +52,3 @@ class TVController: UIViewController {
     }
     
 }
-
-
-//protocol ITV {
-//    func on()
-//    func off()
-//    func switchCannel(channel: Int)
-//}
-
-//class SamsungTv: ITV {
-//    func on() {
-//        print ("Samsung is turned on.")
-//    }
-//    
-//    func off() {
-//        print ("Samsung is turned on.")
-//    }
-//    
-//    func switchCannel(channel: Int) {
-//        print ("Samsung: cannel - \(channel)")
-//    }
-//}
-
-//class SonyTv: ITV {
-//    func on() {
-//        print ("Sony is turned on.")
-//    }
-//    
-//    func off() {
-//        print ("Sony is turned on.")
-//    }
-//    
-//    func switchCannel(channel: Int) {
-//        print ("Sony: cannel - \(channel)")
-//    }
-//}
-
-//class AbstractRemoteCotroller {
-//    private var tv: ITV?
-//    
-//    init (tv: ITV) {
-//        self.tv = tv
-//    }
-//    
-//    func on() {
-//        tv?.on()
-//    }
-//    
-//    func off() {
-//        tv?.off()
-//    }
-//    
-//    func setCannel(channel: Int) {
-//        tv?.switchCannel(channel)
-//    }
-//    
-//}
-
-//class LogitechRemoteController: AbstractRemoteCotroller {
-//    override init (tv: ITV) {
-//        super.init(tv: tv)
-//    }
-//    
-//    func setCannelKeyBoard (channel: Int) {
-//        setCannel(channel)
-//        print("Logitech use keyboard to set channel.")
-//    }
-//}
-
-////use
-//func startToUseRM () {
-//    let tv:ITV = SonyTv()
-//    let lrc:LogitechRemoteController = LogitechRemoteController(tv: tv)
-//    lrc.setCannelKeyBoard(100)
-//}
