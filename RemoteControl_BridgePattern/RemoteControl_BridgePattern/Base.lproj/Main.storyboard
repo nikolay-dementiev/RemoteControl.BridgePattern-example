@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="TVController" customModule="RemoteControl_BridgePattern" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,120 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EJn-Ry-OYi" customClass="TVInterfaceView" customModule="RemoteControl_BridgePattern" customModuleProvider="target">
+                                <rect key="frame" x="180" y="41" width="240" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tv1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXK-k2-w3p">
+                                        <rect key="frame" x="203" y="8" width="29" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="bmS-nh-1d8"/>
+                                            <constraint firstAttribute="width" constant="29" id="myV-ZA-vMr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cannel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DCY-1t-fsq">
+                                        <rect key="frame" x="8" y="99" width="116" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="116" id="5Bv-98-x1k"/>
+                                            <constraint firstAttribute="height" constant="21" id="NuD-xa-qLl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="DCY-1t-fsq" firstAttribute="leading" secondItem="EJn-Ry-OYi" secondAttribute="leading" constant="8" id="1EJ-tk-wZ9"/>
+                                    <constraint firstAttribute="width" constant="240" id="Bi5-4v-gRE"/>
+                                    <constraint firstAttribute="trailing" secondItem="wXK-k2-w3p" secondAttribute="trailing" constant="8" id="UjU-7J-k7o"/>
+                                    <constraint firstAttribute="height" constant="128" id="dVo-Nu-KYe"/>
+                                    <constraint firstAttribute="bottom" secondItem="DCY-1t-fsq" secondAttribute="bottom" constant="8" id="eYo-6G-Vy7"/>
+                                    <constraint firstItem="wXK-k2-w3p" firstAttribute="top" secondItem="EJn-Ry-OYi" secondAttribute="top" constant="8" id="i0d-t0-Czg"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="currentBackgroundColor">
+                                        <color key="value" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rnw-hw-5Zf" customClass="TVInterfaceView" customModule="RemoteControl_BridgePattern" customModuleProvider="target">
+                                <rect key="frame" x="180" y="219" width="240" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tv2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iny-Da-y4P">
+                                        <rect key="frame" x="203" y="8" width="29" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="29" id="Cjc-9J-dJ4"/>
+                                            <constraint firstAttribute="height" constant="21" id="eYu-aF-Pvi"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cannel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHo-6t-x6S">
+                                        <rect key="frame" x="8" y="99" width="109" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="nuk-tg-o3q"/>
+                                            <constraint firstAttribute="width" constant="109" id="wfk-0w-98R"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="iny-Da-y4P" secondAttribute="trailing" constant="8" id="acg-0D-wSk"/>
+                                    <constraint firstAttribute="width" constant="240" id="bb4-Am-u0i"/>
+                                    <constraint firstAttribute="height" constant="128" id="flk-Mh-gdx"/>
+                                    <constraint firstItem="JHo-6t-x6S" firstAttribute="leading" secondItem="rnw-hw-5Zf" secondAttribute="leading" constant="8" id="lYR-u4-tfj"/>
+                                    <constraint firstAttribute="bottom" secondItem="JHo-6t-x6S" secondAttribute="bottom" constant="8" id="qM9-xd-CeL"/>
+                                    <constraint firstItem="iny-Da-y4P" firstAttribute="top" secondItem="rnw-hw-5Zf" secondAttribute="top" constant="8" id="tso-uF-NtM"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="currentBackgroundColor">
+                                        <color key="value" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOu-xa-9AX">
+                                <rect key="frame" x="234" y="550" width="132" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="RVk-ga-aic"/>
+                                </constraints>
+                                <state key="normal" title="change channel">
+                                    <color key="titleShadowColor" red="0.53725490200000003" green="0.76862745099999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeCannelButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3rT-tH-QXt"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EJn-Ry-OYi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3PV-LS-2xC"/>
+                            <constraint firstItem="EJn-Ry-OYi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="21" id="685-4V-bH3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KOu-xa-9AX" secondAttribute="bottom" constant="20" id="7Da-lh-imi"/>
+                            <constraint firstItem="KOu-xa-9AX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IPN-Ad-fHJ"/>
+                            <constraint firstItem="rnw-hw-5Zf" firstAttribute="top" secondItem="EJn-Ry-OYi" secondAttribute="bottom" constant="50" id="STw-EE-6Ey"/>
+                            <constraint firstItem="rnw-hw-5Zf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gs9-SB-twq"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tv1" destination="EJn-Ry-OYi" id="ej9-41-57T"/>
+                        <outlet property="tv1CannelLabel" destination="DCY-1t-fsq" id="cR9-Y6-FXd"/>
+                        <outlet property="tv1Label" destination="wXK-k2-w3p" id="9S3-PN-CYx"/>
+                        <outlet property="tv2" destination="rnw-hw-5Zf" id="iif-WI-vEp"/>
+                        <outlet property="tv2CannelLabel" destination="JHo-6t-x6S" id="3ne-tc-I1W"/>
+                        <outlet property="tv2Label" destination="iny-Da-y4P" id="99h-zF-Gzd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="194" y="97"/>
         </scene>
     </scenes>
 </document>

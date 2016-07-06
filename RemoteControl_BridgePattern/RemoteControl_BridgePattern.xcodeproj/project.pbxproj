@@ -11,6 +11,15 @@
 		E798C3961D2D14DA004CD5C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E798C3941D2D14DA004CD5C6 /* Main.storyboard */; };
 		E798C3981D2D14DA004CD5C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E798C3971D2D14DA004CD5C6 /* Assets.xcassets */; };
 		E798C39B1D2D14DA004CD5C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E798C3991D2D14DA004CD5C6 /* LaunchScreen.storyboard */; };
+		E798C3A81D2D1A63004CD5C6 /* TVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E798C3A71D2D1A63004CD5C6 /* TVController.swift */; };
+		E798C3AA1D2D1ACB004CD5C6 /* TVInterfaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E798C3A91D2D1ACB004CD5C6 /* TVInterfaceView.swift */; };
+		E798C3AC1D2D2894004CD5C6 /* Bridge_GenericImplementation.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E798C3AB1D2D2894004CD5C6 /* Bridge_GenericImplementation.rtf */; };
+		E798C3AE1D2D298F004CD5C6 /* LogitechRemoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E798C3AD1D2D298F004CD5C6 /* LogitechRemoteController.swift */; };
+		E798C3B01D2D29B7004CD5C6 /* AbstractRemoteCotroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E798C3AF1D2D29B7004CD5C6 /* AbstractRemoteCotroller.swift */; };
+		E798C3B21D2D29D7004CD5C6 /* SamsungTv.swift in Sources */ = {isa = PBXBuildFile; fileRef = E798C3B11D2D29D7004CD5C6 /* SamsungTv.swift */; };
+		E798C3B41D2D29F3004CD5C6 /* SonyTv.swift in Sources */ = {isa = PBXBuildFile; fileRef = E798C3B31D2D29F3004CD5C6 /* SonyTv.swift */; };
+		E798C3B61D2D2A1F004CD5C6 /* ITV.swift in Sources */ = {isa = PBXBuildFile; fileRef = E798C3B51D2D2A1F004CD5C6 /* ITV.swift */; };
+		E798C3B81D2D2CFE004CD5C6 /* TypeOfViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E798C3B71D2D2CFE004CD5C6 /* TypeOfViewer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +29,15 @@
 		E798C3971D2D14DA004CD5C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		E798C39A1D2D14DA004CD5C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E798C39C1D2D14DA004CD5C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		E798C3A71D2D1A63004CD5C6 /* TVController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVController.swift; sourceTree = "<group>"; };
+		E798C3A91D2D1ACB004CD5C6 /* TVInterfaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVInterfaceView.swift; sourceTree = "<group>"; };
+		E798C3AB1D2D2894004CD5C6 /* Bridge_GenericImplementation.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Bridge_GenericImplementation.rtf; sourceTree = "<group>"; };
+		E798C3AD1D2D298F004CD5C6 /* LogitechRemoteController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogitechRemoteController.swift; sourceTree = "<group>"; };
+		E798C3AF1D2D29B7004CD5C6 /* AbstractRemoteCotroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractRemoteCotroller.swift; sourceTree = "<group>"; };
+		E798C3B11D2D29D7004CD5C6 /* SamsungTv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SamsungTv.swift; sourceTree = "<group>"; };
+		E798C3B31D2D29F3004CD5C6 /* SonyTv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SonyTv.swift; sourceTree = "<group>"; };
+		E798C3B51D2D2A1F004CD5C6 /* ITV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITV.swift; sourceTree = "<group>"; };
+		E798C3B71D2D2CFE004CD5C6 /* TypeOfViewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeOfViewer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +83,9 @@
 		E798C3A21D2D156F004CD5C6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E798C3A71D2D1A63004CD5C6 /* TVController.swift */,
+				E798C3AD1D2D298F004CD5C6 /* LogitechRemoteController.swift */,
+				E798C3AF1D2D29B7004CD5C6 /* AbstractRemoteCotroller.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -72,6 +93,8 @@
 		E798C3A31D2D156F004CD5C6 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				E798C3AB1D2D2894004CD5C6 /* Bridge_GenericImplementation.rtf */,
+				E798C3B71D2D2CFE004CD5C6 /* TypeOfViewer.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -79,6 +102,9 @@
 		E798C3A41D2D156F004CD5C6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E798C3B51D2D2A1F004CD5C6 /* ITV.swift */,
+				E798C3B11D2D29D7004CD5C6 /* SamsungTv.swift */,
+				E798C3B31D2D29F3004CD5C6 /* SonyTv.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -97,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				E798C3941D2D14DA004CD5C6 /* Main.storyboard */,
+				E798C3A91D2D1ACB004CD5C6 /* TVInterfaceView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -161,6 +188,7 @@
 			files = (
 				E798C39B1D2D14DA004CD5C6 /* LaunchScreen.storyboard in Resources */,
 				E798C3981D2D14DA004CD5C6 /* Assets.xcassets in Resources */,
+				E798C3AC1D2D2894004CD5C6 /* Bridge_GenericImplementation.rtf in Resources */,
 				E798C3961D2D14DA004CD5C6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -172,7 +200,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E798C3AE1D2D298F004CD5C6 /* LogitechRemoteController.swift in Sources */,
+				E798C3B01D2D29B7004CD5C6 /* AbstractRemoteCotroller.swift in Sources */,
+				E798C3B21D2D29D7004CD5C6 /* SamsungTv.swift in Sources */,
+				E798C3B81D2D2CFE004CD5C6 /* TypeOfViewer.swift in Sources */,
+				E798C3B41D2D29F3004CD5C6 /* SonyTv.swift in Sources */,
 				E798C3911D2D14DA004CD5C6 /* AppDelegate.swift in Sources */,
+				E798C3A81D2D1A63004CD5C6 /* TVController.swift in Sources */,
+				E798C3AA1D2D1ACB004CD5C6 /* TVInterfaceView.swift in Sources */,
+				E798C3B61D2D2A1F004CD5C6 /* ITV.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

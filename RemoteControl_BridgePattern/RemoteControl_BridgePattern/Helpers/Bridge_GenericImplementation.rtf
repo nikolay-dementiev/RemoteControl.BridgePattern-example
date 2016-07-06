@@ -1,0 +1,81 @@
+{\rtf1\ansi\ansicpg1251\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red170\green13\blue145;\red92\green38\blue153;\red63\green110\blue116;
+\red46\green13\blue110;\red196\green26\blue22;\red38\green71\blue75;\red0\green116\blue0;\red28\green0\blue207;
+}
+\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\deftab674
+\pard\tx674\pardeftab674\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf2 \CocoaLigature0 protocol\cf0  ITV \{\
+    \cf2 func\cf0  on()\
+    \cf2 func\cf0  off()\
+    \cf2 func\cf0  switchCannel(channel: \cf3 Int\cf0 )\
+\}\
+\
+\cf2 class\cf0  SamsungTv: \cf4 ITV\cf0  \{\
+    \cf2 func\cf0  on() \{\
+        \cf5 print\cf0  (\cf6 "Samsung is turned on."\cf0 )\
+    \}\
+    \
+    \cf2 func\cf0  off() \{\
+        \cf5 print\cf0  (\cf6 "Samsung is turned on."\cf0 )\
+    \}\
+    \
+    \cf2 func\cf0  switchCannel(channel: \cf3 Int\cf0 ) \{\
+        \cf5 print\cf0  (\cf6 "Samsung: cannel - \cf0 \\\cf6 (\cf0 channel\cf6 )"\cf0 )\
+    \}\
+\}\
+\
+\cf2 class\cf0  SonyTv: \cf4 ITV\cf0  \{\
+    \cf2 func\cf0  on() \{\
+        \cf5 print\cf0  (\cf6 "Sony is turned on."\cf0 )\
+    \}\
+    \
+    \cf2 func\cf0  off() \{\
+        \cf5 print\cf0  (\cf6 "Sony is turned on."\cf0 )\
+    \}\
+    \
+    \cf2 func\cf0  switchCannel(channel: \cf3 Int\cf0 ) \{\
+        \cf5 print\cf0  (\cf6 "Sony: cannel - \cf0 \\\cf6 (\cf0 channel\cf6 )"\cf0 )\
+    \}\
+\}\
+\
+\cf2 class\cf0  AbstractRemoteCotroller \{\
+    \cf2 private\cf0  \cf2 var\cf0  tv: \cf4 ITV\cf0 ?\
+    \
+    \cf2 init\cf0  (tv: \cf4 ITV\cf0 ) \{\
+        \cf2 self\cf0 .\cf4 tv\cf0  = tv\
+    \}\
+    \
+    \cf2 func\cf0  on() \{\
+        \cf4 tv\cf0 ?.\cf7 on\cf0 ()\
+    \}\
+    \
+    \cf2 func\cf0  off() \{\
+        \cf4 tv\cf0 ?.\cf7 off\cf0 ()\
+    \}\
+    \
+    \cf2 func\cf0  setCannel(channel: \cf3 Int\cf0 ) \{\
+        \cf4 tv\cf0 ?.\cf7 switchCannel\cf0 (channel)\
+    \}\
+    \
+\}\
+\
+\cf2 class\cf0  LogitechRemoteController: \cf4 AbstractRemoteCotroller\cf0  \{\
+    \cf2 override\cf0  \cf2 init\cf0  (tv: \cf4 ITV\cf0 ) \{\
+        \cf2 super\cf0 .\cf2 init\cf0 (tv: tv)\
+    \}\
+    \
+    \cf2 func\cf0  setCannelKeyBoard (channel: \cf3 Int\cf0 ) \{\
+        \cf7 setCannel\cf0 (channel)\
+        \cf5 print\cf0 (\cf6 "Logitech use keyboard to set channel."\cf0 )\
+    \}\
+\}\
+\
+\cf8 //use\
+\cf2 func\cf0  startToUseRM () \{\
+    \cf2 let\cf0  tv:\cf4 ITV\cf0  = \cf4 SonyTv\cf0 ()\
+    \cf2 let\cf0  lrc:\cf4 LogitechRemoteController\cf0  = \cf4 LogitechRemoteController\cf0 (tv: tv)\
+    lrc.\cf7 setCannelKeyBoard\cf0 (\cf9 100\cf0 )\
+\}}
