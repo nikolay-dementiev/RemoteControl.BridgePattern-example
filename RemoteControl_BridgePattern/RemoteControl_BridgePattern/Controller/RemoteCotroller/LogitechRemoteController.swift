@@ -9,10 +9,10 @@
 import Foundation
 
 class LogitechRemoteController: AbstractRemoteCotroller {
-    override init (tv: ITV) {
-        super.init(tv: tv)
+    override init (tvs: ITV) {
+        super.init(tvs: tvs)
     }
-    
+
     func setCannelKeyBoard (channel: Int) {
         setCannel(channel)
         print("Logitech use keyboard to set channel.")

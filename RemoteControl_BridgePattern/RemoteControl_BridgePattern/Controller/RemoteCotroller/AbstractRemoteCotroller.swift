@@ -9,22 +9,22 @@
 import Foundation
 
 class AbstractRemoteCotroller {
-    private var tv: ITV?
-    
-    init (tv: ITV) {
-        self.tv = tv
+    private var tvs: ITV?
+
+    init (tvs: ITV) {
+        self.tvs = tvs
     }
-    
+
     func on() {
-        tv?.on()
+        tvs?.on()
     }
-    
+
     func off() {
-        tv?.off()
+        tvs?.off()
     }
-    
+
     func setCannel(channel: Int) {
-        tv?.switchCannel(channel)
+        tvs?.switchCannel(channel)
     }
-    
+
 }

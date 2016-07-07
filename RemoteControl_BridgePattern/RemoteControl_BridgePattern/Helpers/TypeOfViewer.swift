@@ -10,11 +10,10 @@ import Foundation
 
 enum TypeOfViewer: String, CustomStringConvertible {
     case SamsungTv, SonyTv
-    
-    var description : String {
+
+    var description: String {
         get {
             return self.rawValue
         }
     }
 }
-

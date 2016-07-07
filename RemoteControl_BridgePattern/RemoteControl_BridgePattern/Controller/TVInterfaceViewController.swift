@@ -7,9 +7,8 @@
 //
 
 class TVInterfaceViewController: TVInterfaceViewControll {
-    
-    
-    func switchCannel(channel: Int, tvType: TypeOfViewer?){
+
+    func switchCannel(channel: Int, tvType: TypeOfViewer?) {
         if let typeOfTvTemp = tvType {
             print ("\(typeOfTvTemp.description): cannel - \(channel).")
         }
@@ -18,12 +17,12 @@ class TVInterfaceViewController: TVInterfaceViewControll {
         if let typeOfTvTemp = tvType {
             print ("\(typeOfTvTemp.description) is turned on.")
         }
-        
+
     }
     func off(tvType: TypeOfViewer?) {
         if let typeOfTvTemp = tvType {
             print ("\(typeOfTvTemp.description) is turned off.")
         }
-        
-    }    
+
+    }
 }
