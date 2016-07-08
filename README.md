@@ -11,6 +11,7 @@ What's interesting here?:
  <li>func "<b>getRandomColor() -> UIColor</b>" - return random color</li>
  <li>func "<b>randRange (lower: Int , upper: Int) -> Int</b>" - return random Int in range</li>
 </ul>
+4.Has been tested using <a href="https://github.com/realm/SwiftLint">SwiftLint</a>
 
 <table border="0" width="100%" cellpadding="5" align="center" cellspacing = "2">
    <tr>
